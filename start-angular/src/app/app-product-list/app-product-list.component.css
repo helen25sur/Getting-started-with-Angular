@@ -1,3 +1,45 @@
-.mat-card {
+.page-header {
+  padding: 1rem 0;
+  padding-top: 88px;
+  background-color: var(--primary-clr);
+  color: var(--text-clr);
+}
+
+mat-card {
+  margin-bottom: 1rem;
+  padding: 1.5rem;
   border-radius: 0;
+}
+
+mat-card a {
+  display: grid;
+  grid-template-areas:
+    'image header'
+    'image content'
+    'btns btns';
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+}
+
+mat-card-header {
+  grid-area: header;
+}
+
+img[mat-card-lg-image] {
+  grid-area: image;
+}
+
+mat-card-content {
+  grid-area: content;
+}
+
+mat-card-actions {
+  margin-top: 0.5rem;
+  grid-area: btns;
+  display: flex;
+  align-items: flex-start;
+}
+
+.product-price {
+  font-size: 1.2rem;
 }

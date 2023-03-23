@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppTopBarComponent } from './app-top-bar/app-top-bar.component';
 import { AppProductListComponent } from './app-product-list/app-product-list.component';
-import { AppProductAlertsComponent } from './app-product-alerts/app-product-alerts.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
 
 // Angular Material
 import {MatCommonModule} from '@angular/material/core';
@@ -20,7 +20,7 @@ import { MatCardModule } from '@angular/material/card';
     AppComponent,
     AppTopBarComponent,
     AppProductListComponent,
-    AppProductAlertsComponent
+    ProductAlertsComponent
   ],
   imports: [
     BrowserModule,

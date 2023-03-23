@@ -1,4 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --basic-clr: #303030;
+  --primary-clr: #7b1fa2;
+  --accent-clr: #61DDA0;
+  --warn-clr: #F55246;
+  --disabled-clr: #494949;
+  --text-clr: #ffffff;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--basic-clr);
+}
+
+main {
+  min-height: 90vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
