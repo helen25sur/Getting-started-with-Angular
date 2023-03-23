@@ -5,15 +5,15 @@
 </header>
 <div class="container">
   <mat-card *ngFor="let product of products">
-    <a [title]="product.name + ' details'">
+    <a [title]="product.name + ' details'"
+       [routerLink]="['/products', product.id]">
       <mat-card-header>
         <mat-card-title-group>
           <mat-card-title>{{ product.name }}</mat-card-title>
         </mat-card-title-group>
       </mat-card-header>
-      <img mat-card-lg-image [src]="product.imgSrc" [alt]="product.name">
+      <img mat-card-md-image [src]="product.imgSrc" [alt]="product.name">
       <mat-card-content *ngIf="product.description">
-        <p class="product-price">Price: <strong>{{ product.price }}</strong>€</p>
         <p>Description: {{ product.description }}</p>
       </mat-card-content>
       <mat-card-actions>

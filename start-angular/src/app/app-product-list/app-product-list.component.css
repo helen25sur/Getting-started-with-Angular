@@ -25,7 +25,7 @@ mat-card-header {
   grid-area: header;
 }
 
-img[mat-card-lg-image] {
+img[mat-card-md-image] {
   grid-area: image;
 }
 
@@ -40,6 +40,3 @@ mat-card-actions {
   align-items: flex-start;
 }
 
-.product-price {
-  font-size: 1.2rem;
-}

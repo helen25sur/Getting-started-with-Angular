@@ -22,6 +22,11 @@ main {
   min-height: 90vh;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;

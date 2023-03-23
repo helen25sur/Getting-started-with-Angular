@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AppTopBarComponent } from './app-top-bar/app-top-bar.component';
 import { AppProductListComponent } from './app-product-list/app-product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 // Angular Material
 import {MatCommonModule} from '@angular/material/core';
@@ -20,7 +21,8 @@ import { MatCardModule } from '@angular/material/card';
     AppComponent,
     AppTopBarComponent,
     AppProductListComponent,
-    ProductAlertsComponent
+    ProductAlertsComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

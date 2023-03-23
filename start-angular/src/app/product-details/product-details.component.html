@@ -1,0 +1,16 @@
+<header class="page-header">
+  <div class="container">
+    <h1 class="main-title">Product Details</h1>
+  </div>
+</header>
+
+<div class="container">
+  <mat-card *ngIf="product">
+     <img [src]="product.imgSrc" [alt]="product.name">
+    <mat-card-title>{{ product.name }}</mat-card-title>
+    <h4 class="product-price">{{ product.price | currency: 'EUR' }}</h4>
+    <mat-card-content>
+      <p>{{ product.description }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
