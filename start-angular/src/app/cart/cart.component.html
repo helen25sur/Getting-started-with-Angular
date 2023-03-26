@@ -5,7 +5,7 @@
 </header>
 
 <div class="container">
-  <mat-card *ngIf="items">
+  <mat-card>
     <p>
       <a mat-raised-button color="primary" routerLink="/shipping" target="_blank">Shipping Prices</a>
     </p>
@@ -19,5 +19,21 @@
       <td>{{ item.price | currency: 'EUR' }}</td>
     </tr>
    </table>
+
+  <form [formGroup]="checkoutForm"
+    (ngSubmit)="onSubmit()"
+    class="purchase-form">
+    <mat-form-field appearance="outline" color="accent">
+      <mat-label for="name">Name</mat-label>
+      <input matInput id="name" type="text" formControlName="name" placeholder="Name" />
+    </mat-form-field>
+    <mat-form-field appearance="outline" color="accent">
+      <mat-label for="address">Address</mat-label>
+      <input matInput id="address" type="text" formControlName="address" placeholder="Address" />
+    </mat-form-field>
+      <button mat-raised-button color="accent"
+        type="submit"
+        >Purchase</button>
+   </form>
   </mat-card>
 </div>

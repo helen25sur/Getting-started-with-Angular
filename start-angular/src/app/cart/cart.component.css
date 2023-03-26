@@ -21,3 +21,10 @@ th {
 td {
   font-size: 1rem;
 }
+
+.purchase-form {
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+}
