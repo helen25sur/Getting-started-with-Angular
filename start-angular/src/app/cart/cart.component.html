@@ -1,0 +1,20 @@
+<header class="page-header">
+  <div class="container">
+    <h1 class="main-title">Cart</h1>
+  </div>
+</header>
+
+<div class="container">
+  <mat-card *ngIf="items">
+   <table>
+    <tr>
+      <th>Product</th>
+      <th>Cost</th>
+    </tr>
+    <tr *ngFor="let item of items">
+      <td>{{ item.name }}</td>
+      <td>{{ item.price | currency: 'EUR' }}</td>
+    </tr>
+   </table>
+  </mat-card>
+</div>

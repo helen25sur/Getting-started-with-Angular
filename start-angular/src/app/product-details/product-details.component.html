@@ -12,5 +12,8 @@
     <mat-card-content>
       <p>{{ product.description }}</p>
     </mat-card-content>
+    <mat-card-actions>
+      <button color="accent" mat-raised-button (click)="addToCart(product)">BUY</button>
+    </mat-card-actions>
   </mat-card>
 </div>

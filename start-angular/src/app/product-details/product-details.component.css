@@ -1,10 +1,3 @@
-.page-header {
-  padding: 1rem 0;
-  padding-top: 88px;
-  background-color: var(--primary-clr);
-  color: var(--text-clr);
-}
-
 .container:has(mat-card) {
   height: 100%;
   display: flex;
@@ -13,6 +6,7 @@
 
 mat-card {
   margin-top: 2rem;
+  padding: 2rem;
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -33,4 +27,10 @@ mat-card img {
   font-size: 1.3rem;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+button[mat-raised-button] {
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
