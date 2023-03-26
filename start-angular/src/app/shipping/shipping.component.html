@@ -1,0 +1,20 @@
+<header class="page-header">
+  <div class="container">
+    <h1 class="main-title">Shipping</h1>
+  </div>
+</header>
+
+<div class="container">
+  <mat-card>
+   <table>
+    <tr>
+      <th>Type</th>
+      <th>Price</th>
+    </tr>
+    <tr *ngFor="let shipping of shippingCosts | async">
+      <td>{{ shipping.type }}</td>
+      <td>{{ shipping.price | currency: 'EUR' }}</td>
+    </tr>
+   </table>
+  </mat-card>
+</div>

@@ -1,0 +1,23 @@
+mat-card {
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 1rem;
+  border: 2px solid #6E6E6E;
+}
+
+th {
+  color: var(--accent-clr);
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+}
+
+td {
+  font-size: 1rem;
+}
